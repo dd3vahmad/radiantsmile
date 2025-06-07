@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-white">
+    <div className="w-full bg-white fixed z-10">
       <div className="w-full max-w-7xl mx-auto py-4 px-5 flex items-center justify-between">
         <Image
           src={radiantSmileLogo.src}

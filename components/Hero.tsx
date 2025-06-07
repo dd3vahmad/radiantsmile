@@ -1,28 +1,121 @@
-import { Calendar, LocationEdit, PhoneCall } from "lucide-react";
-import { ElementType } from "react";
+import {
+  Calendar,
+  Contact,
+  LocationEdit,
+  PhoneCall,
+  Stars,
+  Waypoints,
+} from "lucide-react";
+import { ElementType, ReactNode } from "react";
 import dentist from "@/asset/hero-dentist.png";
+import { Button } from "./ui/button";
 
 interface IInfo {
   title: string;
   Icon: ElementType;
+  content: ReactNode;
 }
 
 const infos = [
-  { title: "Schedule Hours", Icon: Calendar },
-  { title: "Our Location", Icon: LocationEdit },
-  { title: "Appointment", Icon: PhoneCall },
+  {
+    title: "Schedule Hours",
+    Icon: Calendar,
+    content: (
+      <div className="flex flex-col gap-y-4 px-4 py-3">
+        <div className="flex items-center justify-between w-full">
+          <h3 className="font-semibold">Monday - Friday</h3>
+
+          <h4 className="font-bold">08:30AM - 06:30PM</h4>
+        </div>
+        <div className="flex items-center justify-between w-full">
+          <h3 className="font-semibold">Saturday</h3>
+
+          <h4 className="font-bold">14:30AM - 05:30PM</h4>
+        </div>
+        <div className="flex items-center justify-between w-full">
+          <h3 className="font-semibold">Sunday</h3>
+
+          <h4 className="font-bold">14:30AM - 05:30PM</h4>
+        </div>
+        <div className="flex items-center justify-between w-full">
+          <h3 className="font-semibold">24/7 Service Available</h3>
+        </div>
+      </div>
+    ),
+  },
+  {
+    title: "Our Location",
+    Icon: LocationEdit,
+    content: (
+      <div className="flex flex-col px-4 py-3 justify-between h-full">
+        <address>
+          Just a random address that's very long and would take some space,
+          Akure, Ondo State.
+        </address>
+
+        <Button className="p-2 rounded-full w-fit bg-white text-blue-400 cursor-pointer hover:bg-white hover:opacity-90">
+          <div className="bg-blue-500 p-1 rounded-full">
+            <Waypoints size={64} className="text-white rounded-full" />
+          </div>
+          <h3 className="ps-1 pe-2 text-gray-800">Get Direction</h3>
+        </Button>
+      </div>
+    ),
+  },
+  {
+    title: "Appointment",
+    Icon: PhoneCall,
+    content: (
+      <div className="flex flex-col px-4 py-3 justify-between h-full">
+        <address>
+          Just a random address that's very long and would take some space,
+          Akure, Ondo State.
+        </address>
+
+        <div className="text-white flex gap-2 items-center">
+          <div className="bg-blue-500 w-10 h-10 flex justify-center items-center border border-white rounded-full">
+            <PhoneCall size={30} className="text-white rounded-full" />
+          </div>
+
+          <div className="flex flex-col gap-y-1">
+            <h3 className="ps-1 pe-2">Give Us A Call</h3>
+            <h3 className="font-semibold">(+234) 8067891723</h3>
+          </div>
+        </div>
+      </div>
+    ),
+  },
 ];
 
 const Info = () => {
   return (
-    <div className="flex flex-col px-4 md:px-0">
-      <h4 className="text-blue-500">EXCELLENCE IN DENTAL SERVICES</h4>
+    <div className="flex flex-col px-4 md:px-0 max-w-lg gap-3">
+      <span className="text-blue-500 text-sm flex items-center gap-1">
+        <Stars />
+        <h4>EXCELLENCE IN DENTAL SERVICES</h4>
+        <Stars />
+      </span>
+      <h1 className="text-5xl font-bold">
+        A Lifetime of Healthy Smiles & Wellness
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita
+        facilis quod consequuntur illum debitis pariatur ea ducimus. Iusto non
+        nemo asperiores doloremque odit totam adipisci recusandae laboriosam
+        expedita natus.
+      </p>
+      <Button className="p-2 rounded-full w-fit bg-slate-800 text-white cursor-pointer hover:bg-slate-800 hover:opacity-90">
+        <div className="bg-blue-500 p-1 rounded-full">
+          <Contact size={64} className="text-white rounded-full" />
+        </div>
+        <h3 className="ps-1 pe-2 uppercase">Contact Us</h3>
+      </Button>
     </div>
   );
 };
 
 const InfoCard = ({ bg, info, i }: { bg: string; info: IInfo; i: number }) => {
-  const { Icon, title } = info;
+  const { Icon, title, content } = info;
   return (
     <div
       className={`flex flex-col ${
@@ -38,16 +131,24 @@ const InfoCard = ({ bg, info, i }: { bg: string; info: IInfo; i: number }) => {
       <span
         className={`h-0.5 ${i % 2 ? "bg-slate-700" : "bg-blue-400"} w-full`}
       />
+      {content}
     </div>
+  );
+};
+
+export const Shadow = () => {
+  return (
+    <div className="w-[150px] h-[120px] md:w-[240px] md:h-[220px] bg-blue-400 absolute top-[35%] left-[40%] blur-3xl -z-10"></div>
   );
 };
 
 const Hero = () => {
   return (
-    <div className="w-full px-4 md:px-10">
-      <div className="w-full grid grid-cols-1 md:grid-cols-2 items-center gap-4">
+    <div className="w-full px-4 py-8 lg:py-0 md:px-10">
+      <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-4">
         <Info />
-        <div className="w-full h-full max-h-[56vh] lg:max-h-[60vh]">
+        <div className="w-full h-full max-h-[56vh] lg:max-h-[60vh] relative">
+          <Shadow />
           <img
             src={dentist.src}
             className="w-full h-full object-contain rounded-lg"

@@ -117,6 +117,12 @@ export function Navitems() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
+          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
+            <Link href="/#testimonials">Testimonials</Link>
+          </NavigationMenuLink>
+        </NavigationMenuItem>
+
+        <NavigationMenuItem>
           <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[200px] gap-4">
@@ -136,12 +142,6 @@ export function Navitems() {
               </li>
             </ul>
           </NavigationMenuContent>
-        </NavigationMenuItem>
-
-        <NavigationMenuItem>
-          <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-            <Link href="/#testimonials">Testimonials</Link>
-          </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>

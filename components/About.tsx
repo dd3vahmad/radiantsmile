@@ -6,6 +6,7 @@ import {
   PhoneCall,
   Waypoints,
   CheckCircle,
+  Stars,
 } from "lucide-react";
 import { ElementType, ReactNode } from "react";
 
@@ -105,11 +106,12 @@ const InfoCard = ({ bg, info, i }: { bg: string; info: IInfo; i: number }) => {
 const Info = () => {
   return (
     <div className="flex flex-col px-4 md:px-0 max-w-lg gap-4">
-      <div className="flex items-center gap-2 mb-2">
-        <div className="w-2 h-2 bg-blue-500 rotate-45"></div>
-        <span className="text-blue-500 text-sm font-semibold uppercase tracking-wider">
+      <div className="flex items-center text-blue-500 gap-2 mb-2">
+        <Stars />
+        <span className="text-sm font-semibold uppercase tracking-wider">
           ABOUT US
         </span>
+        <Stars />
       </div>
 
       <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">

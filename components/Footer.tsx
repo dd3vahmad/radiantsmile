@@ -1,0 +1,225 @@
+import Logo from "./ui/logo";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  Facebook,
+  Twitter,
+  Instagram,
+  Linkedin,
+} from "lucide-react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-slate-800 text-white py-12">
+      <div className="max-w-7xl mx-auto px-4">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+          {/* Logo and Description */}
+          <div className="lg:col-span-1">
+            <Logo />
+            <p className="text-slate-300 mt-4 text-sm leading-relaxed">
+              Providing exceptional dental care with a gentle touch. Your smile
+              is our priority, and we're committed to helping you achieve
+              optimal oral health.
+            </p>
+            <div className="flex space-x-4 mt-6">
+              <a
+                href="#"
+                className="text-slate-400 hover:text-blue-500 transition-colors"
+              >
+                <Facebook size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-slate-400 hover:text-blue-500 transition-colors"
+              >
+                <Twitter size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-slate-400 hover:text-blue-500 transition-colors"
+              >
+                <Instagram size={20} />
+              </a>
+              <a
+                href="#"
+                className="text-slate-400 hover:text-blue-500 transition-colors"
+              >
+                <Linkedin size={20} />
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Information */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Contact Info
+            </h3>
+            <div className="space-y-3">
+              <div className="flex items-start space-x-3">
+                <MapPin
+                  className="text-blue-500 mt-1 flex-shrink-0"
+                  size={16}
+                />
+                <div className="text-slate-300 text-sm">
+                  <p>123 Dental Street</p>
+                  <p>Healthcare Plaza, Suite 200</p>
+                  <p>Your City, State 12345</p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Phone className="text-blue-500 flex-shrink-0" size={16} />
+                <a
+                  href="tel:+1234567890"
+                  className="text-slate-300 text-sm hover:text-blue-500 transition-colors"
+                >
+                  (123) 456-7890
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Mail className="text-blue-500 flex-shrink-0" size={16} />
+                <a
+                  href="mailto:info@dentalclinic.com"
+                  className="text-slate-300 text-sm hover:text-blue-500 transition-colors"
+                >
+                  info@dentalclinic.com
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Office Hours */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Office Hours
+            </h3>
+            <div className="space-y-2">
+              <div className="flex space-x-3">
+                <Clock
+                  className="text-blue-500 flex-shrink-0 mt-0.5"
+                  size={16}
+                />
+                <div className="text-slate-300 text-sm">
+                  <div className="space-y-1">
+                    <p>
+                      <span className="font-medium">Mon - Fri:</span> 8:00 AM -
+                      6:00 PM
+                    </p>
+                    <p>
+                      <span className="font-medium">Saturday:</span> 9:00 AM -
+                      4:00 PM
+                    </p>
+                    <p>
+                      <span className="font-medium">Sunday:</span> Closed
+                    </p>
+                    <p className="text-blue-400 mt-2 font-medium">
+                      Emergency calls 24/7
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Services */}
+          <div>
+            <h3 className="text-lg font-semibold text-white mb-4">
+              Our Services
+            </h3>
+            <ul className="space-y-2 text-slate-300 text-sm">
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  General Dentistry
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Cosmetic Dentistry
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Orthodontics
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Dental Implants
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Root Canal Treatment
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Teeth Whitening
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Emergency Care
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Emergency Contact Banner */}
+        <div className="bg-blue-500 rounded-lg p-4 mb-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between">
+            <div className="text-center sm:text-left mb-4 sm:mb-0">
+              <h4 className="font-semibold text-white">Dental Emergency?</h4>
+              <p className="text-blue-100 text-sm">We're here to help 24/7</p>
+            </div>
+            <a
+              href="tel:+1234567890"
+              className="bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+            >
+              Call Now: (123) 456-7890
+            </a>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="border-t border-slate-700 pt-6">
+          <div className="flex flex-col sm:flex-row items-center justify-between">
+            <p className="text-slate-400 text-sm mb-4 sm:mb-0">
+              &copy; 2025 Radiant Smile Clinic. All rights reserved.
+            </p>
+
+            <div className="flex space-x-6 text-sm">
+              <a
+                href="#"
+                className="text-slate-400 hover:text-blue-500 transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="text-slate-400 hover:text-blue-500 transition-colors"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#"
+                className="text-slate-400 hover:text-blue-500 transition-colors"
+              >
+                Accessibility
+              </a>
+            </div>
+
+            <p className="text-blue-500 text-sm font-semibold mt-4 sm:mt-0">
+              Built with {"</>"} by DD3VAHMAD.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

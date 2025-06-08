@@ -1,19 +1,13 @@
-import Image from "next/image";
-import radiantSmileLogo from "@/asset/logo.png";
 import { Navitems } from "./Navitems";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import Logo from "./ui/logo";
 
 const Navbar = () => {
   return (
-    <div className="w-full bg-white fixed z-10">
+    <div className="w-full bg-white fixed z-20">
       <div className="w-full max-w-7xl mx-auto py-4 px-5 flex items-center justify-between">
-        <Image
-          src={radiantSmileLogo.src}
-          width={100}
-          height={100}
-          alt="Radiant Smile Logo"
-        />
+        <Logo />
 
         <Navitems />
 

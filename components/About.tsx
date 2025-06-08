@@ -2,7 +2,7 @@ import dentist from "@/asset/about-banner.png";
 import { Button } from "./ui/button";
 import {
   Calendar,
-  LocationEdit,
+  MapPin,
   PhoneCall,
   Waypoints,
   CheckCircle,
@@ -43,7 +43,7 @@ const infos = [
   },
   {
     title: "Our Location",
-    Icon: LocationEdit,
+    Icon: MapPin,
     content: (
       <div className="flex flex-col px-4 py-3 justify-between h-full">
         <address>

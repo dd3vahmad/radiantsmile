@@ -3,6 +3,7 @@ import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
+import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonials";
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <About />
+      <Services />
       <Testimonial />
       <ContactUs />
       <Footer />

@@ -17,37 +17,37 @@ import {
 const services: { title: string; href: string; description: string }[] = [
   {
     title: "Scaling and Polishing",
-    href: "/services/scaling-polishing",
+    href: "/#services/scaling-polishing",
     description:
       "Professional cleaning to remove plaque, tartar, and stains, leaving your teeth smooth and bright.",
   },
   {
     title: "Teeth Whitening",
-    href: "/services/teeth-whitening",
+    href: "/#services/teeth-whitening",
     description:
       "Brighten your smile with safe and effective whitening treatments performed by dental professionals.",
   },
   {
     title: "Teeth Replacement",
-    href: "/services/teeth-replacement",
+    href: "/#services/teeth-replacement",
     description:
       "Restore your confidence with options like implants, bridges, or dentures to replace missing teeth.",
   },
   {
     title: "Fashion Braces",
-    href: "/services/fashion-braces",
+    href: "/#services/fashion-braces",
     description:
       "Get straighter teeth while looking stylish with our trendy and effective orthodontic solutions.",
   },
   {
     title: "Dental Consultation",
-    href: "/services/dental-consultation",
+    href: "/#services/dental-consultation",
     description:
       "Get a comprehensive dental check-up and personalized treatment plan from our expert dentists.",
   },
   {
     title: "Other Dental Services",
-    href: "/services/others",
+    href: "/#services/others",
     description:
       "We offer a wide range of services including fillings, extractions, and preventive care.",
   },

@@ -1,6 +1,7 @@
 import { Contact, Stars } from "lucide-react";
 import dentist from "@/asset/hero-dentist.png";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Info = () => {
   return (
@@ -19,12 +20,15 @@ const Info = () => {
         nemo asperiores doloremque odit totam adipisci recusandae laboriosam
         expedita natus.
       </p>
-      <Button className="p-2 rounded-full w-fit bg-slate-800 text-white cursor-pointer hover:bg-slate-800 hover:opacity-90">
-        <div className="bg-blue-500 p-1 rounded-full">
-          <Contact size={64} className="text-white rounded-full" />
-        </div>
-        <h3 className="ps-1 pe-2 uppercase">Contact Us</h3>
-      </Button>
+
+      <Link href={"#book-an-appointment"}>
+        <Button className="p-2 rounded-full w-fit bg-slate-800 text-white cursor-pointer hover:bg-slate-800 hover:opacity-90">
+          <div className="bg-blue-500 p-1 rounded-full">
+            <Contact size={64} className="text-white rounded-full" />
+          </div>
+          <h3 className="ps-1 pe-2 uppercase">Contact Us</h3>
+        </Button>
+      </Link>
     </div>
   );
 };

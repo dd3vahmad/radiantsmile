@@ -7,6 +7,7 @@ import {
   Waypoints,
   CheckCircle,
   Stars,
+  ArrowRight,
 } from "lucide-react";
 import { ElementType, ReactNode } from "react";
 
@@ -146,8 +147,9 @@ const Info = () => {
       </div>
 
       {/* CTA Button */}
-      <Button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full font-semibold w-fit transition-all duration-300 transform hover:scale-105">
-        READ MORE
+      <Button className="bg-blue-500 hover:bg-blue-600 cursor-pointer text-white px-8 py-3 rounded-full font-semibold w-fit transition-all duration-300 transform hover:scale-105">
+        READ MORE{" "}
+        <ArrowRight className="transform hover:translate-y-5 duration-300" />
       </Button>
     </div>
   );
@@ -155,7 +157,10 @@ const Info = () => {
 
 const About = () => {
   return (
-    <div className="w-full py-16 bg-gradient-to-br from-blue-50 to-white px-4 md:px-10 overflow-hidden">
+    <section
+      id="about"
+      className="w-full py-16 bg-gradient-to-br from-blue-50 to-white px-4 md:px-10 overflow-hidden"
+    >
       {/* Info Cards Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
         {infos.map((info, i) => (
@@ -198,7 +203,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

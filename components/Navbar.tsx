@@ -2,6 +2,7 @@ import Image from "next/image";
 import radiantSmileLogo from "@/asset/logo.png";
 import { Navitems } from "./Navitems";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -16,9 +17,11 @@ const Navbar = () => {
 
         <Navitems />
 
-        <Button className="bg-blue-500 hover:bg-blue-500 hover:opacity-90 rounded-full cursor-pointer md:block hidden">
-          Book An Appointment
-        </Button>
+        <Link href={"#book-an-appointment"}>
+          <Button className="bg-blue-500 hover:bg-blue-500 hover:opacity-90 rounded-full cursor-pointer md:block hidden">
+            Book An Appointment
+          </Button>
+        </Link>
       </div>
     </div>
   );

@@ -161,7 +161,10 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
   }
 
   return (
-    <section className="py-20 bg-gradient-to-bl from-blue-50 via-white to-blue-50">
+    <section
+      id="book-an-appointment"
+      className="py-20 bg-gradient-to-bl from-blue-50 via-white to-blue-50"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -433,7 +436,7 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                           className="sr-only"
                         />
                         <div
-                          className={`p-3 border-2 rounded-lg text-center font-medium transition-all duration-200 ${
+                          className={`py-3 px-2 md:p-3 border-2 rounded-lg text-center text-sm md:text-md font-medium transition-all duration-200 ${
                             formData.urgency === urgency.value
                               ? urgency.color
                               : "bg-gray-50 text-gray-600 border-gray-200 hover:bg-gray-100"
@@ -493,7 +496,7 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                 </div>
 
                 {/* Submit Button */}
-                <div className="flex gap-4">
+                <div className="flex flex-col md:flex-row gap-4">
                   <button
                     onClick={handleSubmit}
                     className="flex-1 cursor-pointer bg-blue-500 hover:bg-blue-600 text-white py-4 px-8 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center gap-2 transform hover:scale-105"
@@ -512,29 +515,6 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-
-        {/* Trust Indicators */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-          <div className="bg-white rounded-lg px-6 py-10 border border-dashed border-blue-500">
-            <Star className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
-            <h4 className="font-semibold text-gray-900 mb-2">5-Star Rated</h4>
-            <p className="text-gray-600 text-sm">Trusted by 500+ patients</p>
-          </div>
-          <div className="bg-white rounded-lg px-6 py-10 border border-dashed border-blue-500">
-            <Clock className="w-8 h-8 text-blue-500 mx-auto mb-3" />
-            <h4 className="font-semibold text-gray-900 mb-2">Quick Response</h4>
-            <p className="text-gray-600 text-sm">
-              Confirmation within 24 hours
-            </p>
-          </div>
-          <div className="bg-white rounded-lg px-6 py-10 border border-dashed border-blue-500">
-            <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-3" />
-            <h4 className="font-semibold text-gray-900 mb-2">
-              Licensed Professionals
-            </h4>
-            <p className="text-gray-600 text-sm">Certified dental experts</p>
           </div>
         </div>
       </div>

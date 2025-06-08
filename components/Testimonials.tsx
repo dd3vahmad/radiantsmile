@@ -1,6 +1,6 @@
 "use client";
 
-import { Star, Quote, Stars } from "lucide-react";
+import { Star, Quote, Stars, Clock, CheckCircle } from "lucide-react";
 
 interface ITestimonial {
   id: number;
@@ -186,7 +186,10 @@ const Testimonial = () => {
   const duplicatedTestimonials = [...testimonials, ...testimonials];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden">
+    <section
+      id="testimonials"
+      className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -225,25 +228,26 @@ const Testimonial = () => {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+        {/* Trust Indicators */}
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
           <div className="bg-white rounded-lg px-6 py-10 border border-dashed border-blue-500">
-            <div className="text-4xl font-bold text-blue-600 mb-2">500+</div>
-            <div className="text-gray-600 text-sm">Happy Clients</div>
+            <Star className="w-8 h-8 text-yellow-500 mx-auto mb-3" />
+            <h4 className="font-semibold text-gray-900 mb-2">5-Star Rated</h4>
+            <p className="text-gray-600 text-sm">Trusted by 500+ patients</p>
           </div>
           <div className="bg-white rounded-lg px-6 py-10 border border-dashed border-blue-500">
-            <div className="text-4xl font-bold text-green-600 mb-2">4.9</div>
-            <div className="text-gray-600 text-sm">Average Rating</div>
+            <Clock className="w-8 h-8 text-blue-500 mx-auto mb-3" />
+            <h4 className="font-semibold text-gray-900 mb-2">Quick Response</h4>
+            <p className="text-gray-600 text-sm">
+              Confirmation within 24 hours
+            </p>
           </div>
           <div className="bg-white rounded-lg px-6 py-10 border border-dashed border-blue-500">
-            <div className="text-4xl font-bold text-purple-600 mb-2">
-              1,000+
-            </div>
-            <div className="text-gray-600 text-sm">Operations Completed</div>
-          </div>
-          <div className="bg-white rounded-lg px-6 py-10 border border-dashed border-blue-500">
-            <div className="text-4xl font-bold text-orange-600 mb-2">99%</div>
-            <div className="text-gray-600 text-sm">Client Satisfaction</div>
+            <CheckCircle className="w-8 h-8 text-green-500 mx-auto mb-3" />
+            <h4 className="font-semibold text-gray-900 mb-2">
+              Licensed Professionals
+            </h4>
+            <p className="text-gray-600 text-sm">Certified dental experts</p>
           </div>
         </div>
       </div>

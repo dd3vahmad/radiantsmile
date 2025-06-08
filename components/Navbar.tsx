@@ -12,7 +12,7 @@ const Navbar = () => {
         <Navitems />
 
         <Link href={"#book-an-appointment"}>
-          <Button className="bg-blue-500 hover:bg-blue-500 hover:opacity-90 rounded-full cursor-pointer md:block hidden">
+          <Button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-90 rounded-full cursor-pointer md:block hidden">
             Book An Appointment
           </Button>
         </Link>

@@ -117,7 +117,9 @@ const Info = () => {
 
       <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
         Committed to Your Health,{" "}
-        <span className="text-blue-500">One Smile at a Time</span>
+        <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+          One Smile at a Time
+        </span>
       </h1>
 
       <p className="text-gray-600 leading-relaxed">

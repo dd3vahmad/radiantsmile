@@ -201,7 +201,10 @@ const Testimonial = () => {
             <Stars />
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
-            What Our <span className="text-blue-600">Clients Say</span>
+            What Our{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
+              Clients Say
+            </span>
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
             Don't just take our word for it. Here's what our satisfied clients

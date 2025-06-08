@@ -122,10 +122,10 @@ const ServiceCard = ({ service }: { service: IService }) => {
         </div>
       )}
 
-      <div className="p-8">
+      <div className="p-8 flex flex-col h-full">
         {/* Icon and Duration */}
         <div className="flex justify-between items-start mb-6">
-          <div className="p-3 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl text-blue-600 group-hover:scale-110 transition-transform duration-300">
+          <div className="p-3 bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl text-blue-500 group-hover:scale-110 transition-transform duration-300">
             {service.icon}
           </div>
           <div className="flex items-center gap-1 text-gray-500 text-sm">
@@ -136,7 +136,7 @@ const ServiceCard = ({ service }: { service: IService }) => {
 
         {/* Title and Description */}
         <div className="mb-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
+          <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-500 transition-colors duration-300">
             {service.title}
           </h3>
           <p className="text-gray-600 leading-relaxed text-sm">
@@ -145,7 +145,7 @@ const ServiceCard = ({ service }: { service: IService }) => {
         </div>
 
         {/* Features */}
-        <div className="mb-6">
+        <div className="mb-6 flex-1">
           <div className="grid grid-cols-2 gap-2">
             {service.features.map((feature, index) => (
               <div
@@ -160,12 +160,12 @@ const ServiceCard = ({ service }: { service: IService }) => {
         </div>
 
         {/* CTA Button */}
-        <a
-          href={service.href}
-          className="block w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white text-center py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+        <Link
+          href={"#book-an-appointment"}
+          className="block w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:opacity-90 text-white text-center py-3 px-6 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
         >
           Learn More
-        </a>
+        </Link>
       </div>
     </div>
   );
@@ -175,7 +175,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="py-20 bg-gradient-to-br from-blue-50 via-white to-purple-50 overflow-hidden"
+      className="py-20 bg-gradient-to-br from-blue-50 via-white to-blue-50 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
@@ -189,7 +189,7 @@ const Services = () => {
           </div>
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             Dental Care{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-600">
               Services
             </span>
           </h2>
@@ -208,7 +208,7 @@ const Services = () => {
 
         {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+          <div className="bg-gradient-to-r from-blue-500 to-blue-600 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">
               Ready to Transform Your Smile?
             </h3>
@@ -217,7 +217,7 @@ const Services = () => {
               healthier, more beautiful teeth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href={"#contact-us"}>
+              <Link href={"#book-an-appointment"}>
                 <button className="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-50 transition-colors duration-300">
                   Book Appointment
                 </button>

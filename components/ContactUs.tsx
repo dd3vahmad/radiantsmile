@@ -198,8 +198,8 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                   <Phone className="w-6 h-6 text-blue-200 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Phone</h4>
-                    <p className="text-blue-100">(+234) 806-789-1723</p>
-                    <p className="text-blue-100 text-sm">Mon-Fri: 8AM-6:30PM</p>
+                    <p className="text-blue-100">(+234) 803 751 0844</p>
+                    <p className="text-blue-100 text-sm">Mon-Sat: 8AM-7PM</p>
                   </div>
                 </div>
 
@@ -207,7 +207,9 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                   <Mail className="w-6 h-6 text-blue-200 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-blue-100">appointments@dentalcare.com</p>
+                    <p className="text-blue-100">
+                      appointments@radiantsmile.ng
+                    </p>
                     <p className="text-blue-100 text-sm">
                       24/7 Support Available
                     </p>
@@ -218,8 +220,9 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                   <MapPin className="w-6 h-6 text-blue-200 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Location</h4>
-                    <p className="text-blue-100">123 Dental Street, Akure</p>
-                    <p className="text-blue-100">Ondo State, Nigeria</p>
+                    <p className="text-blue-100">
+                      650W+44, Ikpide oroful, Akure 340283, Ondo, Nigeria
+                    </p>
                   </div>
                 </div>
 

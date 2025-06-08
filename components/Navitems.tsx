@@ -86,8 +86,8 @@ export function Navitems() {
                 healthy, confident smile.
               </ListItem>
               <ListItem href="#" title="Where we are">
-                Visit our clinic located in the heart of the city for all your
-                dental needs.
+                Visit our clinic located at 650W+44, Ikpide oroful, Akure
+                340283, Ondo, Nigeria.
               </ListItem>
             </ul>
           </NavigationMenuContent>

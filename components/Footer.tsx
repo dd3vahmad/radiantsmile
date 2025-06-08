@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Logo from "./ui/logo";
 import {
   MapPin,
@@ -25,30 +26,34 @@ const Footer = () => {
               optimal oral health.
             </p>
             <div className="flex space-x-4 mt-6">
-              <a
-                href="#"
+              <Link
+                href="https://www.facebook.com/radiantsmiledentalservices"
+                target="_blank"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 <Facebook size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="https://www.x.com/Radiantsmileakr"
+                target="_blank"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 <Twitter size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="https://www.instagram.com/radiantsmiledentalservices"
+                target="_blank"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 <Instagram size={20} />
-              </a>
-              <a
-                href="#"
+              </Link>
+              <Link
+                href="https://www.instagram.com/radiantsmiledentalservices"
+                target="_blank"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 <Linkedin size={20} />
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -64,9 +69,9 @@ const Footer = () => {
                   size={16}
                 />
                 <div className="text-slate-300 text-sm">
-                  <p>123 Dental Street</p>
-                  <p>Healthcare Plaza, Suite 200</p>
-                  <p>Your City, State 12345</p>
+                  <p>650W+44, Ikpide oroful,</p>
+                  <p>Akure 340283,</p>
+                  <p>Ondo, Nigeria</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
@@ -75,16 +80,16 @@ const Footer = () => {
                   href="tel:+1234567890"
                   className="text-slate-300 text-sm hover:text-blue-500 transition-colors"
                 >
-                  (123) 456-7890
+                  (+234) 803 751 0844
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-blue-500 flex-shrink-0" size={16} />
                 <a
-                  href="mailto:info@dentalclinic.com"
+                  href="mailto:contact@radiantsmile.ng"
                   className="text-slate-300 text-sm hover:text-blue-500 transition-colors"
                 >
-                  info@dentalclinic.com
+                  contact@radiantsmile.ng
                 </a>
               </div>
             </div>
@@ -104,12 +109,8 @@ const Footer = () => {
                 <div className="text-slate-300 text-sm">
                   <div className="space-y-1">
                     <p>
-                      <span className="font-medium">Mon - Fri:</span> 8:00 AM -
-                      6:00 PM
-                    </p>
-                    <p>
-                      <span className="font-medium">Saturday:</span> 9:00 AM -
-                      4:00 PM
+                      <span className="font-medium">Mon - Sat:</span> 8:00 AM -
+                      7:00 PM
                     </p>
                     <p>
                       <span className="font-medium">Sunday:</span> Closed
@@ -131,27 +132,7 @@ const Footer = () => {
             <ul className="space-y-2 text-slate-300 text-sm">
               <li>
                 <a href="#" className="hover:text-blue-500 transition-colors">
-                  General Dentistry
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Cosmetic Dentistry
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Orthodontics
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Dental Implants
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
-                  Root Canal Treatment
+                  Scaling and Polishing
                 </a>
               </li>
               <li>
@@ -161,7 +142,22 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#" className="hover:text-blue-500 transition-colors">
-                  Emergency Care
+                  Teeth Replacement
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Orthodontics (Braces)
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  Dental Consultation
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-blue-500 transition-colors">
+                  And Many More...
                 </a>
               </li>
             </ul>

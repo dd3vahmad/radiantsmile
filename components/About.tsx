@@ -8,8 +8,10 @@ import {
   CheckCircle,
   Stars,
   ArrowRight,
+  Contact,
 } from "lucide-react";
 import { ElementType, ReactNode } from "react";
+import Link from "next/link";
 
 interface IInfo {
   title: string;
@@ -24,16 +26,12 @@ const infos = [
     content: (
       <div className="flex flex-col gap-y-4 px-4 py-3">
         <div className="flex items-center justify-between w-full">
-          <h3 className="font-semibold">Monday - Friday</h3>
-          <h4 className="font-bold">08:30AM - 06:30PM</h4>
-        </div>
-        <div className="flex items-center justify-between w-full">
-          <h3 className="font-semibold">Saturday</h3>
-          <h4 className="font-bold">14:30AM - 05:30PM</h4>
+          <h3 className="font-semibold">Monday - Saturday</h3>
+          <h4 className="font-bold">08:00AM - 07:00PM</h4>
         </div>
         <div className="flex items-center justify-between w-full">
           <h3 className="font-semibold">Sunday</h3>
-          <h4 className="font-bold">14:30AM - 05:30PM</h4>
+          <h4 className="font-bold">Closed</h4>
         </div>
         <div className="flex items-center justify-between w-full">
           <h3 className="font-semibold">24/7 Service Available</h3>
@@ -46,10 +44,12 @@ const infos = [
     Icon: MapPin,
     content: (
       <div className="flex flex-col px-4 py-3 justify-between h-full">
-        <address>
-          Just a random address that's very long and would take some space,
-          Akure, Ondo State.
-        </address>
+        <div className="flex items-center gap-x-1">
+          <span>Visit our clinic located at</span>
+          <address>
+            650W+44, Ikpide oroful, Akure 340283, Ondo, Nigeria.
+          </address>
+        </div>
         <Button className="p-2 rounded-full w-fit bg-white text-blue-400 cursor-pointer hover:bg-white hover:opacity-90">
           <div className="bg-blue-500 p-1 rounded-full">
             <Waypoints size={64} className="text-white rounded-full" />
@@ -64,18 +64,30 @@ const infos = [
     Icon: PhoneCall,
     content: (
       <div className="flex flex-col px-4 py-3 justify-between h-full">
-        <address>
-          Just a random address that's very long and would take some space,
-          Akure, Ondo State.
-        </address>
-        <div className="text-white flex gap-2 items-center">
-          <div className="bg-blue-500 w-10 h-10 flex justify-center items-center border border-white rounded-full">
-            <PhoneCall size={30} className="text-white rounded-full" />
+        <p>
+          Book an appointment with our experienced dental team today to elevate
+          your dental health.
+        </p>
+
+        <div className="w-full flex items-center justify-between">
+          <div className="text-white flex gap-2 items-center">
+            <div className="bg-blue-500 w-10 h-10 flex justify-center items-center border border-white rounded-full">
+              <PhoneCall size={30} className="text-white rounded-full" />
+            </div>
+            <div className="flex flex-col gap-y-1">
+              <h3 className="ps-1 pe-2">Give Us A Call</h3>
+              <h3 className="font-semibold">(+234) 803 751 0844</h3>
+            </div>
           </div>
-          <div className="flex flex-col gap-y-1">
-            <h3 className="ps-1 pe-2">Give Us A Call</h3>
-            <h3 className="font-semibold">(+234) 8067891723</h3>
-          </div>
+
+          <Link href={"#book-an-appointment"}>
+            <Button className="p-2 rounded-full w-fit bg-slate-800 text-white cursor-pointer hover:opacity-90">
+              <div className="bg-blue-500 p-1 rounded-full">
+                <Contact size={64} className="text-white rounded-full" />
+              </div>
+              <h3 className="ps-1 pe-2">Book an Appointment</h3>
+            </Button>
+          </Link>
         </div>
       </div>
     ),

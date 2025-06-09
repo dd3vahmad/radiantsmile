@@ -131,34 +131,52 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2 text-slate-300 text-sm">
               <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
+                <Link
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Scaling and Polishing
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
+                <Link
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Teeth Whitening
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
+                <Link
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Teeth Replacement
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
+                <Link
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Orthodontics (Braces)
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
+                <Link
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   Dental Consultation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:text-blue-500 transition-colors">
+                <Link
+                  href="#services"
+                  className="hover:text-blue-500 transition-colors"
+                >
                   And Many More...
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -172,10 +190,10 @@ const Footer = () => {
               <p className="text-blue-100 text-sm">We're here to help 24/7</p>
             </div>
             <a
-              href="tel:+1234567890"
+              href="tel:+2348037510844"
               className="bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
             >
-              Call Now: (123) 456-7890
+              Call Now: (+234) 803 751 0844
             </a>
           </div>
         </div>
@@ -188,28 +206,36 @@ const Footer = () => {
             </p>
 
             <div className="flex space-x-6 text-sm">
-              <a
+              <Link
                 href="#"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 Privacy Policy
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 Terms of Service
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
                 Accessibility
-              </a>
+              </Link>
             </div>
 
             <p className="text-blue-500 text-sm font-semibold mt-4 sm:mt-0">
-              Built with {"</>"} by DD3VAHMAD.
+              Built with {"</>"} by{" "}
+              <a
+                href="https://thehmad.me"
+                target="_blank"
+                className="text-blue-500 hover:underline cursor-pointer"
+              >
+                DD3VAHMAD
+              </a>
+              .
             </p>
           </div>
         </div>

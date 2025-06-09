@@ -70,7 +70,7 @@ const infos = [
           your dental health.
         </p>
 
-        <div className="w-full flex items-center justify-between">
+        <div className="w-full flex flex-col md:flex-row gap-y-2 items-center justify-between">
           <div className="text-white flex gap-2 items-center">
             <div className="bg-blue-500 w-10 h-10 flex justify-center items-center border border-white rounded-full">
               <PhoneCall size={30} className="text-white rounded-full" />

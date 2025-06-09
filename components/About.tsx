@@ -27,12 +27,12 @@ const infos = [
     content: (
       <div className="flex flex-col gap-y-4 px-4 py-3">
         <div className="flex items-center justify-between w-full">
-          <h3 className="font-semibold">Monday - Saturday</h3>
-          <h4 className="font-bold">08:00AM - 07:00PM</h4>
+          <h3>Monday - Saturday</h3>
+          <h4 className="font-semibold">08:00AM - 07:00PM</h4>
         </div>
         <div className="flex items-center justify-between w-full">
-          <h3 className="font-semibold">Sunday</h3>
-          <h4 className="font-bold">Closed</h4>
+          <h3>Sunday</h3>
+          <h4 className="font-semibold">Closed</h4>
         </div>
         <div className="flex items-center justify-between w-full">
           <h3 className="font-semibold">24/7 Service Available</h3>
@@ -45,8 +45,8 @@ const infos = [
     Icon: MapPin,
     content: (
       <div className="flex flex-col px-4 py-3 justify-between h-full">
-        <div className="flex items-center gap-x-1">
-          <span>Visit our clinic located at</span>
+        <div className="flex flex-col md:flex-row md:items-center gap-x-1">
+          <span className="font-semibold">Visit our clinic located at: </span>
           <address>
             650W+44, Ikpide oroful, Akure 340283, Ondo, Nigeria.
           </address>
@@ -70,8 +70,8 @@ const infos = [
           your dental health.
         </p>
 
-        <div className="w-full flex flex-col md:flex-row gap-y-2 items-center justify-between">
-          <div className="text-white flex gap-2 items-center">
+        <div className="w-full flex flex-col md:flex-row gap-y-2 md:items-center justify-between">
+          <div className="text-white flex gap-2 items-center mt-2 md:mt-0">
             <div className="bg-blue-500 w-10 h-10 flex justify-center items-center border border-white rounded-full">
               <PhoneCall size={30} className="text-white rounded-full" />
             </div>
@@ -102,7 +102,7 @@ const InfoCard = ({ bg, info, i }: { bg: string; info: IInfo; i: number }) => {
       animationType="zoomIn"
       className={`flex flex-col ${
         bg || "bg-blue-500"
-      } text-white h-[240px] rounded-lg cursor-pointer overflow-hidden`}
+      } text-white min-h-[240px] rounded-lg cursor-pointer overflow-hidden`}
     >
       <div className="flex justify-between items-center px-4 py-3">
         <h2 className="font-semibold text-lg">{title}</h2>

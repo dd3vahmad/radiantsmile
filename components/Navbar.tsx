@@ -2,6 +2,7 @@ import { Navitems } from "./Navitems";
 import { Button } from "./ui/button";
 import Link from "next/link";
 import Logo from "./ui/logo";
+import { MobileNavMenu } from "./ui/mobile-nav-menu";
 
 const Navbar = () => {
   return (
@@ -16,6 +17,8 @@ const Navbar = () => {
             Book An Appointment
           </Button>
         </Link>
+
+        <MobileNavMenu />
       </div>
     </div>
   );

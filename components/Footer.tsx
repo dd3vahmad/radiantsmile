@@ -76,21 +76,21 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="text-blue-500 flex-shrink-0" size={16} />
-                <a
+                <Link
                   href="tel:+2348037510844"
                   className="text-slate-300 text-sm hover:text-blue-500 transition-colors"
                 >
                   (+234) 803 751 0844
-                </a>
+                </Link>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-blue-500 flex-shrink-0" size={16} />
-                <a
+                <Link
                   href="mailto:contact@radiantsmile.ng"
                   className="text-slate-300 text-sm hover:text-blue-500 transition-colors"
                 >
                   contact@radiantsmile.ng
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -189,12 +189,12 @@ const Footer = () => {
               <h4 className="font-semibold text-white">Dental Emergency?</h4>
               <p className="text-blue-100 text-sm">We're here to help 24/7</p>
             </div>
-            <a
+            <Link
               href="tel:+2348037510844"
               className="bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors animate-pulse"
             >
               Call Now: (+234) 803 751 0844
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -228,13 +228,13 @@ const Footer = () => {
 
             <p className="text-blue-500 text-sm font-semibold mt-4 sm:mt-0">
               Built with {"</>"} by{" "}
-              <a
+              <Link
                 href="https://thehmad.me"
                 target="_blank"
                 className="text-blue-500 hover:underline cursor-pointer"
               >
                 DD3VAHMAD
-              </a>
+              </Link>
               .
             </p>
           </div>

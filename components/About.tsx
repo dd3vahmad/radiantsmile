@@ -126,7 +126,7 @@ const Info = () => {
       animationType="slideInLeft"
       className="flex flex-col px-4 md:px-0 max-w-lg gap-4"
     >
-      <div className="flex items-center text-blue-500 gap-2 mb-2">
+      <div id="about" className="flex items-center text-blue-500 gap-2 mb-2">
         <Stars />
         <span className="text-sm font-semibold uppercase tracking-wider">
           ABOUT US
@@ -178,10 +178,7 @@ const Info = () => {
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="w-full py-16 bg-gradient-to-br from-blue-50 to-white px-4 md:px-10 overflow-hidden"
-    >
+    <section className="w-full py-16 bg-gradient-to-br from-blue-50 to-white px-4 md:px-10 overflow-hidden">
       {/* Info Cards Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-20">
         {infos.map((info, i) => (

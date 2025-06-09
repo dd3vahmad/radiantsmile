@@ -128,15 +128,22 @@ export function Navitems() {
             <ul className="grid w-[200px] gap-4">
               <li>
                 <NavigationMenuLink asChild>
-                  <Link href="#" className="flex-row items-center gap-2">
+                  <Link
+                    href="https://wa.me/2348037510844"
+                    target="_blank"
+                    className="flex-row items-center gap-2"
+                  >
                     <MessageSquareTextIcon />
                     WhatsApp
                   </Link>
                 </NavigationMenuLink>
                 <NavigationMenuLink asChild>
-                  <Link href="#" className="flex-row items-center gap-2">
+                  <Link
+                    href="tel:+2348037510844"
+                    className="flex-row items-center gap-2"
+                  >
                     <Phone />
-                    (+234) 9151604081
+                    (+234) 803 751 0844
                   </Link>
                 </NavigationMenuLink>
               </li>

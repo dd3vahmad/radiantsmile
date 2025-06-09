@@ -1,5 +1,6 @@
 "use client";
 
+import Animate from "@/providers/animate";
 import {
   Star,
   Stars,
@@ -115,7 +116,10 @@ const services: IService[] = [
 
 const ServiceCard = ({ service }: { service: IService }) => {
   return (
-    <div className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden">
+    <Animate
+      animationType="slideUp"
+      className="group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 overflow-hidden"
+    >
       {service.popular && (
         <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white px-3 py-1 rounded-full text-xs font-semibold">
           Popular
@@ -167,7 +171,7 @@ const ServiceCard = ({ service }: { service: IService }) => {
           Learn More
         </Link>
       </div>
-    </div>
+    </Animate>
   );
 };
 

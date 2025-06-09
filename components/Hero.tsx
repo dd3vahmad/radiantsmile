@@ -2,10 +2,14 @@ import { Contact, Stars } from "lucide-react";
 import dentist from "@/asset/hero-dentist.png";
 import { Button } from "./ui/button";
 import Link from "next/link";
+import Animate from "@/providers/animate";
 
 const Info = () => {
   return (
-    <div className="flex flex-col px-4 lg:px-0 max-w-lg gap-3 mt-10 lg:mt-0">
+    <Animate
+      animationType="slideInLeft"
+      className="flex flex-col px-4 lg:px-0 max-w-lg gap-3 mt-10 lg:mt-0"
+    >
       <span className="text-blue-500 text-sm flex items-center gap-1">
         <Stars />
         <h4>EXCELLENCE IN DENTAL SERVICES</h4>
@@ -29,7 +33,7 @@ const Info = () => {
           <h3 className="ps-1 pe-2 uppercase">Contact Us</h3>
         </Button>
       </Link>
-    </div>
+    </Animate>
   );
 };
 
@@ -43,14 +47,14 @@ const Hero = () => {
   return (
     <div className="w-full h-fit max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-4 pt-24">
       <Info />
-      <div className="w-full h-full relative">
+      <Animate animationType="slideUp" className="w-full h-full relative">
         <Shadow />
         <img
           src={dentist.src}
           className="w-full h-full object-cover"
           alt="Dentist"
         />
-      </div>
+      </Animate>
     </div>
   );
 };

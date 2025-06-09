@@ -15,6 +15,7 @@ import {
   Star,
   Stars,
 } from "lucide-react";
+import Animate from "@/providers/animate";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -189,7 +190,7 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Contact Information */}
-          <div className="lg:col-span-1">
+          <Animate animationType="slideInLeft" className="lg:col-span-1">
             <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl p-8 text-white h-fit sticky top-8">
               <h3 className="text-2xl font-bold mb-8">Get In Touch</h3>
 
@@ -252,10 +253,10 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                 </p>
               </div>
             </div>
-          </div>
+          </Animate>
 
           {/* Appointment Form */}
-          <div className="lg:col-span-2">
+          <Animate animationType="slideInRight" className="lg:col-span-2">
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="space-y-6">
                 {/* Personal Information */}
@@ -521,7 +522,7 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                 </div>
               </div>
             </div>
-          </div>
+          </Animate>
         </div>
       </div>
     </section>

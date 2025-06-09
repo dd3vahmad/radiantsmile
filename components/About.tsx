@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { ElementType, ReactNode } from "react";
 import Link from "next/link";
+import Animate from "@/providers/animate";
 
 interface IInfo {
   title: string;
@@ -97,7 +98,8 @@ const infos = [
 const InfoCard = ({ bg, info, i }: { bg: string; info: IInfo; i: number }) => {
   const { Icon, title, content } = info;
   return (
-    <div
+    <Animate
+      animationType="zoomIn"
       className={`flex flex-col ${
         bg || "bg-blue-500"
       } text-white h-[240px] rounded-lg cursor-pointer overflow-hidden`}
@@ -112,13 +114,16 @@ const InfoCard = ({ bg, info, i }: { bg: string; info: IInfo; i: number }) => {
         className={`h-0.5 ${i % 2 ? "bg-slate-700" : "bg-blue-400"} w-full`}
       />
       {content}
-    </div>
+    </Animate>
   );
 };
 
 const Info = () => {
   return (
-    <div className="flex flex-col px-4 md:px-0 max-w-lg gap-4">
+    <Animate
+      animationType="slideInLeft"
+      className="flex flex-col px-4 md:px-0 max-w-lg gap-4"
+    >
       <div className="flex items-center text-blue-500 gap-2 mb-2">
         <Stars />
         <span className="text-sm font-semibold uppercase tracking-wider">
@@ -165,7 +170,7 @@ const Info = () => {
         READ MORE{" "}
         <ArrowRight className="transform hover:translate-y-5 duration-300" />
       </Button>
-    </div>
+    </Animate>
   );
 };
 
@@ -191,7 +196,7 @@ const About = () => {
       <div className="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 items-center gap-12">
         <Info />
 
-        <div className="relative">
+        <Animate animationType="zoomIn" className="relative">
           {/* Decorative Elements */}
           <div className="absolute -top-6 -right-6 w-24 h-24 bg-blue-100 rounded-full opacity-60"></div>
           <div className="absolute top-12 -right-12 w-8 h-8 bg-blue-500 rounded-full"></div>
@@ -215,7 +220,7 @@ const About = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Animate>
       </div>
     </section>
   );

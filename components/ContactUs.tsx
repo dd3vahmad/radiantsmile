@@ -256,7 +256,7 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
           </Animate>
 
           {/* Appointment Form */}
-          <Animate animationType="slideInRight" className="lg:col-span-2">
+          <Animate className="lg:col-span-2">
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <div className="space-y-6">
                 {/* Personal Information */}

@@ -46,7 +46,9 @@ const infos = [
     content: (
       <div className="flex flex-col px-4 py-3 justify-between h-full">
         <div className="flex flex-col md:flex-row md:items-center gap-x-1">
-          <span className="font-semibold">Visit our clinic located at: </span>
+          <span className="font-semibold md:font-normal">
+            Visit our clinic located at:{" "}
+          </span>
           <address>
             650W+44, Ikpide oroful, Akure 340283, Ondo, Nigeria.
           </address>

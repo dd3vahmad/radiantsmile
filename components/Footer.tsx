@@ -191,7 +191,7 @@ const Footer = () => {
             </div>
             <a
               href="tel:+2348037510844"
-              className="bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors"
+              className="bg-white text-blue-500 px-6 py-2 rounded-lg font-semibold hover:bg-blue-50 transition-colors animate-pulse"
             >
               Call Now: (+234) 803 751 0844
             </a>

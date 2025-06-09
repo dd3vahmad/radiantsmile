@@ -8,7 +8,7 @@ const Info = () => {
   return (
     <Animate
       animationType="slideInLeft"
-      className="flex flex-col px-4 lg:px-0 max-w-lg gap-3 mt-10 lg:mt-0"
+      className="flex flex-col px-4 lg:px-0 max-w-lg gap-4 mt-10 lg:mt-0"
     >
       <span className="text-blue-500 text-sm flex items-center gap-1">
         <Stars />
@@ -19,10 +19,9 @@ const Info = () => {
         A Lifetime of Healthy Smiles & Wellness
       </h1>
       <p className="text-sm lg:text-md">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita
-        facilis quod consequuntur illum debitis pariatur ea ducimus. Iusto non
-        nemo asperiores doloremque odit totam adipisci recusandae laboriosam
-        expedita natus.
+        Providing exceptional dental care with a gentle touch. Your smile is our
+        priority, and we're committed to helping you achieve optimal oral
+        health.
       </p>
 
       <Link href={"#book-an-appointment"}>

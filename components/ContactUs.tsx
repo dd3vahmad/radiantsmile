@@ -124,7 +124,7 @@ Preferred Time: ${formData.appointmentTime || "To be discussed"}
 Phone: ${formData.phone}
 ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
 
-    const whatsappUrl = `https://wa.me/2348067891723?text=${encodeURIComponent(
+    const whatsappUrl = `https://wa.me/2348037510844?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappUrl, "_blank");

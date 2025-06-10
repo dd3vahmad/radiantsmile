@@ -1,15 +1,11 @@
 import Link from "next/link";
 import Logo from "./ui/logo";
-import {
-  MapPin,
-  Phone,
-  Mail,
-  Clock,
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-} from "lucide-react";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import Image from "next/image";
+import tiktok from "@/asset/tiktok.svg";
+import instagram from "@/asset/instagram.svg";
+import x from "@/asset/x.svg";
+import facebook from "@/asset/facebook.svg";
 
 const Footer = () => {
   return (
@@ -27,32 +23,47 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4 mt-6">
               <Link
-                href="https://www.facebook.com/radiantsmiledentalservices"
+                href="https://www.facebook.com/share/1EGqFWRCsf"
                 target="_blank"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
-                <Facebook size={20} />
+                <Image
+                  src={facebook.src}
+                  alt="Facebook Icon"
+                  width={40}
+                  height={40}
+                />
               </Link>
               <Link
                 href="https://www.x.com/Radiantsmileakr"
                 target="_blank"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
-                <Twitter size={20} />
+                <Image src={x.src} alt="X Icon" width={40} height={40} />
               </Link>
               <Link
                 href="https://www.instagram.com/radiantsmiledentalservices"
                 target="_blank"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
-                <Instagram size={20} />
+                <Image
+                  src={instagram.src}
+                  alt="Instagram Icon"
+                  width={40}
+                  height={40}
+                />
               </Link>
               <Link
-                href="https://www.instagram.com/radiantsmiledentalservices"
+                href="https://www.tiktok.com/@radiantsmileakure?_t=ZM-8x5f6RXlySk&_r=1"
                 target="_blank"
                 className="text-slate-400 hover:text-blue-500 transition-colors"
               >
-                <Linkedin size={20} />
+                <Image
+                  src={tiktok.src}
+                  alt="Tiktok Icon"
+                  width={40}
+                  height={40}
+                />
               </Link>
             </div>
           </div>

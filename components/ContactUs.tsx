@@ -16,6 +16,7 @@ import {
   Stars,
 } from "lucide-react";
 import Animate from "@/providers/animate";
+import Link from "next/link";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -208,9 +209,12 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                   <Mail className="w-6 h-6 text-blue-200 mt-1" />
                   <div>
                     <h4 className="font-semibold mb-1">Email</h4>
-                    <p className="text-blue-100">
-                      appointments@radiantsmile.ng
-                    </p>
+                    <Link
+                      href="mailto:radiantsmiledentalservices@gmail.com"
+                      className="text-blue-100"
+                    >
+                      radiantsmiledentalservices@gmail.com
+                    </Link>
                     <p className="text-blue-100 text-sm">
                       24/7 Support Available
                     </p>

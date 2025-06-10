@@ -86,10 +86,10 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Mail className="text-blue-500 flex-shrink-0" size={16} />
                 <Link
-                  href="mailto:contact@radiantsmile.ng"
+                  href="mailto:radiantsmiledentalservices@gmail.com"
                   className="text-slate-300 text-sm hover:text-blue-500 transition-colors"
                 >
-                  contact@radiantsmile.ng
+                  radiantsmiledentalservices@gmail.com
                 </Link>
               </div>
             </div>
@@ -232,7 +232,7 @@ const Footer = () => {
               <Link
                 href="https://www.theahmad.me"
                 target="_blank"
-                className="text-blue-500 hover:underline cursor-pointer"
+                className="text-blue-500 underline cursor-pointer"
               >
                 DD3VAHMAD
               </Link>

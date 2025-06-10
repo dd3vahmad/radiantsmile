@@ -226,9 +226,13 @@ const Services = () => {
                   Book Appointment
                 </button>
               </Link>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300">
+
+              <Link
+                href="tel:+2348037510844"
+                className="border-2 border-white text-white px-8 py-3 rounded-xl font-semibold hover:bg-white hover:text-blue-600 transition-colors duration-300"
+              >
                 Call Us Now
-              </button>
+              </Link>
             </div>
           </div>
         </div>

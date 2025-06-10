@@ -202,7 +202,8 @@ const Footer = () => {
         <div className="border-t border-slate-700 pt-6">
           <div className="flex flex-col sm:flex-row items-center justify-between">
             <p className="text-slate-400 text-sm mb-4 sm:mb-0">
-              &copy; 2025 Radiant Smile Clinic. All rights reserved.
+              &copy; 2025 Radiant Smile Dental Services LTD. All rights
+              reserved.
             </p>
 
             <div className="flex space-x-6 text-sm">

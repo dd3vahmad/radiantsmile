@@ -21,7 +21,7 @@ const testimonials: ITestimonial[] = [
     company: "N/A",
     rating: 5,
     review:
-      "I just had my teeth whitened by an amazing dentist, at the “Radiant Smile Dental Services”, and I have to say, it was a fantastic experience. The dentist was so gentle and careful, making sure I was comfortable the entire time. The clinic had such a warm and welcoming vibe, and the staff were really friendly. I'm thrilled with the results and would highly recommend this dentist to anyone thinking about getting their teeth whitened or any other dental work done.",
+      "I just had my teeth whitened by an amazing dentist, at the “Radiant Smile Dental Services”, and I have to say, it was a fantastic experience. The dentist was so gentle and careful, making sure I was comfortable the entire time.",
     avatar:
       "https://lh3.googleusercontent.com/a/ACg8ocLiiQmHKy4qH5YFrzwpx7QgaGOXWq1eWamIbcnNfUSFhdT2Aw=w36-h36-p-rp-mo-br100",
     date: "10 months ago",
@@ -33,7 +33,7 @@ const testimonials: ITestimonial[] = [
     company: "N/A",
     rating: 5,
     review:
-      "I had an excellent experience at Radiant smile dental services. The staff was welcoming, the clinic was spotless, creating a calm and comfortable environment.My dentist was knowledgeable, taking the time to explain every step and the procedure and answer all my questions.The procedure was smooth and virtually painless. I highly recommend Radiant smile dental services for top-notch dental care.",
+      "I had an excellent experience at Radiant smile dental services. The staff was welcoming, the clinic was spotless, creating a calm and comfortable environment.",
     avatar:
       "https://lh3.googleusercontent.com/a/ACg8ocLXMhAZVSXE-pxHvI3ugqffbw3aR4To_23tpPyiwcAxls0-eA=w36-h36-p-rp-mo-br100",
     date: "10 months ago",
@@ -45,7 +45,7 @@ const testimonials: ITestimonial[] = [
     company: "N/A",
     rating: 5,
     review:
-      "Radiant smile dental services is a top notch dental clinic that renders top notch services. The warm and welcoming atmosphere created by the staff is definitely noteworthy. A visit to Radiant smile dental services will definitely leave you with a beautiful, big and radiant smile.",
+      "Radiant smile dental services is a top notch dental clinic that renders top notch services. A visit to Radiant smile dental services will definitely leave you with a beautiful, big and radiant smile.",
     avatar:
       "https://lh3.googleusercontent.com/a/ACg8ocKH9ohMil_rduIm8rlwhBRIxsvzmpq0Y4zVRywRFVJa7YMmtQ=w36-h36-p-rp-mo-br100",
     date: "3 weeks ago",
@@ -57,9 +57,9 @@ const testimonials: ITestimonial[] = [
     company: "N/A",
     rating: 5,
     review:
-      "I recently visited this dental service and was thoroughly impressed by their well-equipped facilities and experienced staffs. The state-of-the-art equipments and friendly, knowledgeable teams made my experience comfortable and reassuring. I highly recommend this dental service for anyone seeking top-notch care.",
+      "I recently visited this dental service and was thoroughly impressed by their well-equipped facilities and experienced staffs. I highly recommend this dental service for anyone seeking top-notch care.",
     avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",
+      "https://lh3.googleusercontent.com/a/ACg8ocIlkJb3pgkPUh_ZAhybYlhStPvVfgjq9lxYz6gElbYXSYGs8w=w36-h36-p-rp-mo-br100",
     date: "1 year ago",
   },
   {
@@ -107,6 +107,30 @@ const testimonials: ITestimonial[] = [
     avatar:
       "https://lh3.googleusercontent.com/a-/ALV-UjW6AWuR6cS-6X3CVErWwT8kHC8rjI3IQZ1azS4OVClnTgUmpWOX=w36-h36-p-rp-mo-br100",
     date: "1 year ago",
+  },
+  {
+    id: 9,
+    name: "Menewoua Mervine",
+    role: "Client",
+    company: "N/A",
+    rating: 5,
+    review:
+      "The clinic had such a warm and welcoming vibe, and the staff were really friendly. I'm thrilled with the results and would highly recommend this dentist to anyone thinking about getting their teeth whitened or any other dental work done.",
+    avatar:
+      "https://lh3.googleusercontent.com/a/ACg8ocLiiQmHKy4qH5YFrzwpx7QgaGOXWq1eWamIbcnNfUSFhdT2Aw=w36-h36-p-rp-mo-br100",
+    date: "10 months ago",
+  },
+  {
+    id: 10,
+    name: "Adebanke Adebanji",
+    role: "Client",
+    company: "N/A",
+    rating: 5,
+    review:
+      "The procedure was smooth and virtually painless. I highly recommend Radiant smile dental services for top-notch dental care.",
+    avatar:
+      "https://lh3.googleusercontent.com/a/ACg8ocLXMhAZVSXE-pxHvI3ugqffbw3aR4To_23tpPyiwcAxls0-eA=w36-h36-p-rp-mo-br100",
+    date: "10 months ago",
   },
 ];
 

@@ -69,7 +69,7 @@ const Footer = () => {
                   size={16}
                 />
                 <div className="text-slate-300 text-sm">
-                  <p>650W+44, Ikpide oroful,</p>
+                  <p>65RW+444, beside joyfad</p>
                   <p>Akure 340283,</p>
                   <p>Ondo, Nigeria</p>
                 </div>
@@ -229,7 +229,7 @@ const Footer = () => {
             <p className="text-blue-500 text-sm font-semibold mt-4 sm:mt-0">
               Built with {"</>"} by{" "}
               <Link
-                href="https://thehmad.me"
+                href="https://www.theahmad.me"
                 target="_blank"
                 className="text-blue-500 hover:underline cursor-pointer"
               >

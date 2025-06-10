@@ -222,7 +222,7 @@ ${formData.message ? `Additional Info: ${formData.message}` : ""}`;
                   <div>
                     <h4 className="font-semibold mb-1">Location</h4>
                     <p className="text-blue-100">
-                      650W+44, Ikpide oroful, Akure 340283, Ondo, Nigeria
+                      65RW+444, beside joyfad, Akure 340283, Ondo, Nigeria
                     </p>
                   </div>
                 </div>

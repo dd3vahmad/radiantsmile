@@ -50,15 +50,19 @@ const infos = [
             Visit our clinic located at:{" "}
           </span>
           <address>
-            650W+44, Ikpide oroful, Akure 340283, Ondo, Nigeria.
+            65RW+444, beside joyfad, Akure 340283, Ondo, Nigeria
           </address>
         </div>
-        <Button className="p-2 rounded-full w-fit bg-white text-blue-400 cursor-pointer hover:bg-white hover:opacity-90">
-          <div className="bg-blue-500 p-1 rounded-full">
-            <Waypoints size={64} className="text-white rounded-full" />
-          </div>
-          <h3 className="ps-1 pe-2 text-gray-800">Get Direction</h3>
-        </Button>
+
+        <Link href={"https://maps.app.goo.gl/hnkpp19y4hwcQaAY8"}>
+          <Button className="p-2 rounded-full w-fit bg-white text-blue-400 cursor-pointer hover:bg-white hover:opacity-90">
+            <div className="bg-blue-500 p-1 rounded-full">
+              <Waypoints size={64} className="text-white rounded-full" />
+            </div>
+
+            <h3 className="ps-1 pe-2 text-gray-800">Get Direction</h3>
+          </Button>
+        </Link>
       </div>
     ),
   },

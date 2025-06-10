@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Radiant Smile Clinic",
+  title: "Radiant Smile Dental Services LTD",
   description: "Committed to Your Health, One Smile at a Time",
 };
 
